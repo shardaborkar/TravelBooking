@@ -45,7 +45,7 @@ public class BaseTest {
 	public TravelHomePage travelHomePage;
 	public WebDriver initializeDriver() throws IOException{
 		
-		/*
+		
 		Properties pro=new Properties();
 		FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+ "\\src\\main\\java\\resources\\global.properties");
 		pro.load(fis);
@@ -81,11 +81,11 @@ public class BaseTest {
 	   		}
 		   driver=new EdgeDriver(options);
 		}
-		*/
+		/*
 		DesiredCapabilities dr = new DesiredCapabilities();
 	        dr.setBrowserName("chrome"); 
                 driver= new RemoteWebDriver(new java.net.URL("http://20.48.204.0:4444⁠"),dr);
-		
+		*/
 		driver.manage().window().maximize();
 		driver.manage().window().setSize(new Dimension(1440,900));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));

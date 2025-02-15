@@ -10,13 +10,15 @@
   <name>FlightBookingTDD</name>
   <url>http://maven.apache.org</url>
 
- <properties>
+<!--   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-   <!--  <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target> -->
+   <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target> 
    
-  </properties>
-
+  </properties>-->
+<properties>
+    <maven.compiler.release>11</maven.compiler.release>
+</properties>
   <dependencies>
   
   <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
@@ -103,9 +105,7 @@
     <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.7.0</version>
-        <configuration>
-          <release>10</release>
-        </configuration>
+       
       </plugin> 
      <!--   <plugin>
     <groupId>org.apache.maven.plugins</groupId>

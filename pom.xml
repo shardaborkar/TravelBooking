@@ -9,12 +9,17 @@
 
   <name>FlightBookingTDD</name>
   <url>http://maven.apache.org</url>
-
-  <properties>
+ <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+   
+  </properties>
+  <!--<properties>
   <java.version>11</java.version>
   <maven.compiler.source>${java.version}</maven.compiler.source>
   <maven.compiler.target>${java.version}</maven.compiler.target>
-</properties>
+</properties>-->
 <!--<properties>
     <maven.compiler.release>11</maven.compiler.release>
 </properties>-->
@@ -104,7 +109,10 @@
     <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.0</version>
-       
+        <configuration>
+            <source>1.8</source>
+            <target>1.8</target>
+        </configuration> 
       </plugin> 
      <!--   <plugin>
     <groupId>org.apache.maven.plugins</groupId>
